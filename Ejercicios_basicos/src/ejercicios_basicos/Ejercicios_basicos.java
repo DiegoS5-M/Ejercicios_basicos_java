@@ -12,6 +12,9 @@ public class Ejercicios_basicos {
         System.out.println("1. EJERCICIO 1");
         System.out.println("2. EJERCICIO 2");
         System.out.println("3. EJERCICIO 3");
+        System.out.println("4. EJERCICIO 4");
+        System.out.println("5. EJERCICIO 5");
+        
         
         
         int seleccion =op.nextInt();
@@ -33,6 +36,19 @@ public class Ejercicios_basicos {
                  ascensor2.inicio();
                 break;
                 
+            case 4 :
+                
+                Ejercicio_con3 temperatura = new Ejercicio_con3(18.5,39.8);
+                temperatura.iniciar();
+                break;
+                
+            case 5 :
+                
+                Ejercicio_con4 temperatura1 = new Ejercicio_con4(30.4);
+                temperatura1.iniciar();
+                break;
+                
+             
             default:
                 System.out.println("Seleccione una opcion valida");
         }

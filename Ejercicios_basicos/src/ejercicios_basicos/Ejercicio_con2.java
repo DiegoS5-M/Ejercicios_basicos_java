@@ -20,6 +20,7 @@ Scanner op = new Scanner(System.in);
     
     
     
+    
     public void datosAscensor(){
         
         System.out.println("piso actual " + pisoActual);
@@ -35,6 +36,8 @@ Scanner op = new Scanner(System.in);
         this.pisoActual =1;
         this.pisoMinimo=pisoMinimo;
         this.pisoMaximo=pisoMaximo;
+        this.pesoMaximo = pesoMaximo;
+        
         
         
     }
@@ -74,12 +77,8 @@ Scanner op = new Scanner(System.in);
             
             return;
         }
+        datosAscensor();
         
-    
-        
-         System.out.println("ingrese el piso al que desea ir");
-         
-         int pisoDeseado = op.nextInt();
         
         }
 }
